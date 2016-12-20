@@ -1,0 +1,67 @@
+<script type="text/html" id="lists">
+	<div id="list_1">
+		<%for(var i=0;i<data.act_info[1].act_rows.length;i++){%>
+			<figure>
+				<img src="<%=data.act_info[1].act_rows[i].activity.img%>">
+				<figcaption><%=data.act_info[1].act_rows[i].activity.name%></figcaption>
+			</figure>
+		<%}%>	
+	</div>
+	<div id="list_2">
+		<%for(var a=0;a<data.act_info[3].act_rows.length-2;a++){%>
+			<img src="<%=data.act_info[3].act_rows[a].activity.img%>">
+		<%}%>		
+	</div>
+	<div id="list_3">
+		<h3><img src="<%=data.act_info[4].act_rows[0].act_rows[0].chead_detail.img%>"></h3>	
+	</div>
+	<div id="list_4">
+		<%for(var b=0;b<data.act_info[4].act_rows[1].act_rows.length;b++){%>
+			<img src="<%=data.act_info[4].act_rows[1].act_rows[b].cactivity_detail.img%>">
+		<%}%>		
+	</div>
+	<div id="list_5">
+		<%for(var c=0;c<data.act_info[4].act_rows[2].act_rows.length;c++){%>
+			<figure>
+				<p style="background:url('<%=data.act_info[4].act_rows[2].act_rows[c].cicons_detail.img%>')no-repeat center;background-size:1rem"></p>
+				<figcaption><%=data.act_info[4].act_rows[2].act_rows[c].cicons_detail.name%></figcaption>
+			</figure>
+		<%}%>	
+	</div>
+	<div id="list_6">
+		<%for(var d=0;d<data.act_info[4].act_rows[3].act_rows.length;d++){%>
+			<a href="#">
+				<img src="<%=data.act_info[4].act_rows[3].act_rows[d].activity.img%>">
+			</a>
+		<%}%>		
+	</div>
+	<div id="clearfixed"></div>
+	<%for(var e=0;e<data.act_info[5].act_rows.length;e++){%>
+		<div id="list_7">
+			<p><span><%=data.act_info[5].act_rows[e].category_detail.name%></span></p>
+			<div id="kong"></div>
+			<div id="right"><a href="#">更多</a></div>
+		</div>
+		<div id="list_8">
+			<p><img src="<%=data.act_info[5].act_rows[e].activity.img%>"></p>
+		</div>
+		<div id="list_9">
+			<%for(var f = 0;f < data.act_info[5].act_rows[e].category_detail.goods.length;f++){%>
+				<div id="d_1">
+					<figure>
+						<a href="#">
+							<img src="<%=data.act_info[5].act_rows[e].category_detail.goods[f].app_mimg%>">
+						</a>
+						<figcaption><%=data.act_info[5].act_rows[e].category_detail.goods[f].name%></figcaption>
+					</figure>
+					<div>
+						<b>精选</b>
+						<p><%=data.act_info[5].act_rows[e].category_detail.goods[f].specifics%></p>
+						<span>￥<%=data.act_info[5].act_rows[e].category_detail.goods[f].partner_price%></span>
+						<strong name="<%=data.act_info[5].act_rows[e].category_detail.goods[f].partner_price%>"><a href="#"></a></strong>
+					</div>
+				</div>
+			<%}%>
+		</div>
+	<%}%>
+</script>

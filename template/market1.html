@@ -1,0 +1,34 @@
+<script type="text/html" id="market1">
+	<div id="left">
+		<ul>
+			<%for(var i=0;i<data.categories.length;i++){%>
+				<li id="<%=data.categories[i].id%>"><%=data.categories[i].name%></li>
+			<%}%>
+		</ul>
+	</div>
+	<div id="right">
+		<%for(var a in data.products){%>
+			<ul class="<%=a%>">
+				<li>
+					<span><b>全部分类</b></span>
+					<span><b>全部分类</b></span>		
+				</li>
+				<li></li>
+				<%for(var j=0;j<data.products[a].length;j++){%>
+					<li>
+						<img src="<%=data.products[a][j].img%>"/>
+						<span id="myspan"></span>
+						<b name="<=data.products[a].pm_desc>" id="bs"></b>
+						<em name="<%=data.products[a].pm_desc%>"></em>
+						<p>
+							<span><%=data.products[a][j].name%></span>
+							<b>精选</b><b id="b_1" class="<%=data.products[a].pm_desc%>"><%=data.products[a][j].pm_desc%></b><br/>
+							<strong><%=data.products[a][j].specifics%></strong><br/>
+							<i id="is">￥<%=data.products[a][j].partner_price%></i><i id="is_2">￥<%=data.products[a][j].market_price%></i>
+						</p>
+					</li>
+				<%}%>
+			</ul>
+		<%}%>
+	</div>
+</script>

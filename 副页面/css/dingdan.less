@@ -1,0 +1,173 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Myriad Set Pro","Lucida Grande","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif,'Microsoft Yahei',Simsun;
+    font-size: 0.12rem;
+    margin: 0 auto;
+    background: #efefef;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight: normal;
+}
+html{
+    font-size:100px;
+}
+img{
+    border: none;
+}
+.clearfixed:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+@media only screen and (max-width:568px) and (min-width:320px){
+    html{
+        font-size: 88px;
+    }
+}
+@media only screen and (min-width:400px){
+    html{
+        font-size: 100px;
+    }
+}
+@media only screen and (min-width:700px){
+    html{
+        font-size: 120px;
+    }
+}
+/*---------------------------header------------------------------*/
+header{
+    width: 100%;
+    height: 0.58rem;
+    background: #f9fafd;
+    padding: 0 0.1rem 0 0.1rem;
+    border-bottom: 0.01rem solid #ddd;
+    div{
+        width: 100%;
+        height: 0.58rem;
+        // background: red;
+        line-height: 0.58rem;
+        display: flex;
+        span{
+            width: 0.2rem;
+            height: 0.3rem;
+            margin-top: 0.16rem;
+            display: inline-block;
+            background: url(../imgs/z1.jpg)no-repeat left center;
+            background-size: 0.17rem;
+            float: left;
+        }
+        p{
+            margin: auto;
+            font-size: 0.18rem;
+            font-weight: 700;
+            color: #333;
+        }
+        b{
+            display: inline-block;
+            width: 0.3rem;
+            height: 0.4rem;
+            margin-top: 0.1rem;
+            background: url(../imgs/sx.jpg)no-repeat right center;
+            background-size: 0.27rem;
+        }
+    }
+}
+.list{
+    width: 100%;
+    height: 0.54rem;
+    background: #fff;
+    padding: 0 0.1rem 0 0.1rem;
+    ul{
+        width: 100%;
+        height: 0.54rem;
+        display: flex;
+        li{
+            width: 0.77rem;
+            height: 0.54rem;
+            font-size: 0.16rem;
+            flex:1 1 auto;
+            text-align: center;
+            line-height: 0.54rem;
+            color: #333;
+        }
+        li:hover{
+            border-bottom: 0.02rem solid #ff3800;
+            color: #ff3800;
+        }
+    }
+}
+.shoplist{
+    width: 100%;
+    height: 1.75rem;
+    background: #fff;
+    margin-top: 0.2rem;
+    padding: 0 0.1rem 0 0.1rem;
+    .list_1{
+        width: 100%;
+        height: 0.47rem;
+        // background: red;
+        line-height: 0.47rem;
+        font-size: 0.155rem;
+        border-bottom: 0.01rem solid #ddd;
+        span{
+            display: inline-block;
+            font-size: 0.17rem;
+            float: right;
+            color: #f80;
+        }
+    }
+    .list_2{
+        width: 100%;
+        height: 0.81rem;
+        // background: yellow;
+        padding-top:0.1rem; 
+        border-bottom: 0.01rem solid #ddd;
+        img{
+            width: 0.59rem;
+            height: 0.59rem;
+            float: left;
+        }
+        b{
+            margin: 0.2rem 0.05rem 0 0;
+            display: inline-block;
+            width: 0.2rem;
+            height: 0.2rem;
+            float: right;
+            background: url(../imgs/y.jpg)no-repeat left center;
+            background-size: 0.07rem;
+        }
+    }
+    .list_3{
+        width: 100%;
+        height: 0.47rem;
+        // background: red;
+        line-height: 0.47rem;
+        font-size: 0.15rem;
+        i{
+            font-style: normal;
+        }
+        b{
+            margin-left: 0.07rem;
+            font-size: 0.155rem;
+        }
+        
+    }
+}
+.logo{
+    width: 100%;
+    height: 1rem;
+    background: url(../imgs/logo.jpg) no-repeat center; 
+}

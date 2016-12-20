@@ -1,0 +1,176 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, 'Microsoft Yahei', Simsun;
+  font-size: 0.12rem;
+  margin: 0 auto;
+  background: #efefef;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal;
+}
+html {
+  font-size: 100px;
+}
+img {
+  border: none;
+}
+.clearfixed:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+@media only screen and (max-width: 568px) and (min-width: 320px) {
+  html {
+    font-size: 88px;
+  }
+}
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  html {
+    font-size: 120px;
+  }
+}
+/*---------------------------header------------------------------*/
+header {
+  width: 100%;
+  height: 0.5822rem;
+  background: #f9fafd;
+  border-bottom: 0.01rem solid #e0e0e0;
+  padding: 0 0 0 0.16rem;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+header div {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  background: url(../imgs/z1.jpg) no-repeat left center;
+  background-size: 0.173rem;
+  margin: auto;
+  font-weight: 600;
+  font-size: 0.183rem;
+  text-indent: 40%;
+}
+.kong {
+  width: 100%;
+  height: 0.5822rem;
+}
+.circle {
+  width: 100%;
+  height: 2.0688rem;
+  background: #fff;
+  padding: 0.15rem 0 0.2rem 0;
+  display: flex;
+}
+.circle .circle1 {
+  width: 1.76rem;
+  height: 1.76rem;
+  margin: auto;
+  border-radius: 50%;
+  border: 0.23rem solid #ddd;
+}
+.circle .circle2 {
+  width: 1.31rem;
+  height: 1.31rem;
+  border-radius: 50%;
+  border: 0.12rem solid #c7c7c7;
+}
+.circle .circle3 {
+  width: 1.07rem;
+  height: 1.07rem;
+  border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 0.2rem;
+  padding: 0.01rem;
+  color: #a5a5a5;
+}
+.circle .circle3 p {
+  margin: 0.28rem 0 0.05rem 0;
+  font-size: 0.16rem;
+  font-weight: 590;
+}
+.circle .circle3 span {
+  display: inline-block;
+  font-size: 0.25rem;
+}
+.list {
+  width: 100%;
+  height: 0.84rem;
+  display: flex;
+  background: #fff;
+  border-top: 0.01rem solid #e0e0e0;
+}
+.list figure {
+  width: 33rem;
+  height: 0.84rem;
+  margin: auto;
+  border-right: 0.01rem solid #e0e0e0;
+}
+.list figure p {
+  width: 100%;
+  height: 0.55rem;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA3CAMAAACfBSJ0AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAALWUExURUxpcZmZmZmZmY2Njf///6qqqpmZmZmZmZiYmJmZmZmZmX9/f5+fn5mZmZubm5mZmZmZmZmZmZmZmZmZmZeXl5GRkZmZmZiYmJaWlqqqqpycnJiYmJiYmJiYmJiYmJiYmJiYmJmZmZiYmJiYmJiYmJSUlJiYmJmZmZmZmZmZmZmZmZubm5iYmJycnJmZmZmZmZiYmJeXl5mZmZmZmZeXl5qampmZmZiYmJmZmZycnJmZmX9/f5mZmZmZmZqampqampiYmJqamqKiopSUlJiYmJqampmZmZmZmZmZmZqampiYmJmZmZ2dnZmZmZmZmZmZmZaWlpmZmZmZmZaWlpiYmJiYmJGRkZWVlZiYmJmZmZmZmZmZmZmZmZmZmZmZmZeXl5iYmJmZmZeXl5iYmJmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZiYmJqampmZmZqampiYmJiYmJeXl5iYmJqampmZmZmZmZiYmJeXl5mZmZeXl5mZmZqampiYmJiYmJiYmJmZmZmZmZmZmZmZmZmZmZmZmZeXl5iYmJmZmZmZmZmZmZiYmJeXl5aWlpmZmZmZmZiYmJmZmZmZmZiYmJiYmJmZmZiYmJiYmJubm5mZmZ+fn5iYmJqampiYmJeXl5mZmZiYmJOTk5iYmJiYmJmZmZmZmZeXl5mZmZmZmZmZmZmZmZmZmZaWlpiYmJiYmJmZmZmZmZmZmZiYmJmZmZiYmJiYmJiYmJiYmJiYmJeXl5mZmZmZmZmZmZmZmZqampmZmZmZmZeXl5iYmJmZmZmZmZiYmJmZmZmZmZmZmZmZmZiYmJiYmJiYmJmZmZiYmJmZmZmZmZiYmJiYmJiYmJmZmZiYmJiYmJiYmJubm5mZmZqampmZmZmZmZubm5mZmZmZmZmZmZqampiYmJmZmZmZmZqampiYmJiYmJiYmJiYmJmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmRpoi8AAAADxdFJOUwBaLQkBA/oe/uH9BAj4M4f2w3iZGwfz3hEGGu3qd+/3+YCimr0MrvvGVagSax/u32Y2y+dFRxn06w2gAtPaK1uGUQsY/DCWlF89NNcVafWMMeYyFoSJDh3ZtOmml6p2QIuvXug8N5wPQYJzyLsmqxxcSFSsTNXdzFmhINghxWHy8I1iFHulSp25fn3UTyLS7FLONU2xsJjKLl0Q5UJ1O7+VE3J/t8RjhSODuksntkNEm82p3HCBPnyfL3HQTmxWP3kq1o8FpLXJKGdXk5AKwOJQp+BtvjnP0SmIYEmKJJ6jOjjjbrxljsK4x5HxksHkdGpanMcEAAAEuElEQVRIx41W5V8baRBeICSbhAgEd3d3KNri7ldKoRT3UopLoVyv7bVXu7q7u/u5u7u73z3/wW1s8waWkP2wOzPv79l5x4eiOB+HixfC77v8G96Xt5Ay9jE/WB/Jh/YRDSx9aGYE6rH6JWrAZNTgP65q0na96TyozYlKTQe+DY8IUvE+mb27FzMSujrPAMqsXQ7E7c5doC/eK2OuIGp5fC7Y08mA65NBXD8sFALxT3HDXpeA9prrp2YezGm9+ewDXjHgvM6AESWMnbssZomzgT2OBn3m4wucd5ghrAA2+MwX2KVArf5VTwPeDvMHNwt4i+RN5eisMiaVekATXrV4AVtXGJWDb2+CkzXLnQG9w8jkTSlCoJYOccMTnKn64ftb4v1EoQO+h7pZoRXQpiHXw9Z6NuqYZ8aniVbhbwSE13kNiaoFGrFNMl5VU7F+SOPQ5n/yMx0zHhimDYAJsExF3IJ8EQfOuY7kctwTNJQ4DL6qBBMikcs6ud8nVjGCVopKsL58fEJEs/8+BH4B84kAorlw6O84pSn7jO0noiFg3SXCaebjAScxJ66JcULKlYCAmL1MjzHV4agJrGLef2M5Z6RwmeQyCdw5ODNvW9yckUz2o+VMJ8JYKls14vQ9BC4aGKWs9czz+aImWWXUkp/gG8Z/UJP1eVq2Z6RbVAuBcwRWUs8CIayk1+mGorC/WSq90pBmyb97+0ev6i7vS990HDYn7WOuGEw9A7BuieCnE/c9m5RNVAyJy0c7NQ03lm+TSAlc668jui5yk8RFYg1ViCmWH5bYdrl8mVJub/917s8jrqHJJs0Ce/sV0oDKgSkSZ4ksajWhz0RYcP9kvCrUkshf8mSuN2gVIwwclpK4IUYfaZ+JUPmu2lzS7chjCJklZTOaWTZuNtO+MdxS+pMt9dRGvU591FJHR5C4KfynjF8bqw+Wffu1k+y7lozfeRpG0PEBgStQhXwSx1lc40Yh7I7svL6qK4k/mXgdf3b+Vht46ZQT3elB4GJUIffGLsI+XkqDh+KqYs2jJgtKdq3f6i/F1ew76Y569lWo8vMEQrWOSRXqJarMkjvu/uhRTiFltmn0uW8jYN35OpxZ8btsow6hMa1MhTB4anFxB+y8gnd8LM1buforf/lg1J3hZVLp7QCXHlf/14iO5n6MUhWue6zWPpv3FNeUw1myeGRfgSzq/A8iZtaWHklr1l1DLFSVLdPP3FFJxp0S25vp7KvaP6Oe92n7GaVAkdrovq16m4MnVyOwsIO/hrS2Ra1a5m1XV6YeS7yzvR9FcW0RG0HnEr1bXXjmqe9k8IVJkdsH4zDGOenvyYmZYLMJodqi92lqcHnOJXgd9+xdmA8n4iRTji2txsy/naC36bVxGt4288J4zLyV6YsYEzfMt8ItYOb7y7wZwheBIWuDsITlwCuzl4C1NJwvGICV5QOeL3Ec5BSBromdS1kxH6J2HufZ80nMylhRzpUkwaVA6cG5rmKxNg5w8zo8Yx80rWR6nN/RIANGCBQSphoaA4Nz1WMyKGL1XTvl1utbMo+zF52zUw9LfmiYk5uadH7zohFJwfv+zISE3a/9HvwRIzZ+Nx+PySl0eTT98N4cWfQ/M0/N+DPm+hAAAAAASUVORK5CYII=) no-repeat center;
+  background-size: 0.3rem;
+}
+.list figure figcaption {
+  font-size: 0.16rem;
+  text-align: center;
+  color: #999999;
+}
+.list_1 {
+  margin-top: 0.2rem;
+  width: 100%;
+  height: 3.853rem;
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap;
+}
+.list_1 figure {
+  width: 50%;
+  height: 1.9236rem;
+  border-right: 0.01rem solid #e0e0e0;
+  border-bottom: 0.01rem solid #e0e0e0;
+}
+.list_1 figure p {
+  width: 100%;
+  height: 1.25rem;
+  background: url(http://img01.bqstatic.com//upload/activity/2016040511461553.jpg@300w_300h_90Q.jpg) no-repeat center;
+  background-size: 1.5rem;
+}
+.list_1 figure figcaption {
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.3rem;
+  padding-left: 6%;
+  font-size: 0.16rem;
+}
+.list_1 figure figcaption span:last-child {
+  color: #e64f1a;
+}

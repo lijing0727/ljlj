@@ -1,0 +1,366 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, 'Microsoft Yahei', Simsun;
+  font-size: 0.12rem;
+  margin: 0 auto;
+  background: #efefef;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal;
+}
+html {
+  font-size: 100px;
+}
+img {
+  border: none;
+}
+.clearfixed:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+@media only screen and (max-width: 568px) and (min-width: 320px) {
+  html {
+    font-size: 88px;
+  }
+}
+@media only screen and (min-width: 400px){
+  html {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  html {
+    font-size: 120px;
+  }
+}
+/*---------------------------header------------------------------*/
+.div1 {
+  width: 100%;
+  height: 0.59rem;
+  background: #f9fafd;
+  font-size: 0.18rem;
+  text-align: center;
+  line-height: 0.59rem;
+  font-weight: 700;
+  color: #333333;
+  border-bottom: 0.01rem solid #e0e0e0;
+}
+.shouhuo {
+  width: 100%;
+  height: 1.08rem;
+  border: 0.03rem solid #fff;
+  border-image: url(imgs/backImg.jpg) 3 0 round;
+  background: #fff;
+}
+.shouhuo th {
+  width: 28%;
+  height: auto;
+  font-size: 0.175rem;
+  font-weight: 400;
+  padding: .07rem .4rem .07rem .15rem;
+}
+.shouhuo tr td {
+  width: 55%;
+  font-size: 0.175rem;
+  font-weight: 400;
+  text-indent: 0.02rem;
+}
+.shouhuo tr td:last-child {
+  background-image: none;
+}
+.shouhuo tr #y {
+  background: url(imgs/y.jpg) no-repeat 0.45rem center;
+  background-size: 0.07rem;
+}
+.kong111 {
+  width: 100%;
+  height: 0.15rem;
+}
+.sansong {
+  width: 100%;
+  height: 0.73rem;
+  padding: 0.11rem 0.2rem 0 0.2rem;
+  background: #fff;
+  border-bottom: 0.01rem solid #e0e0e0;
+}
+.sansong div {
+  width: 100%;
+  height: 0.35rem;
+}
+.sansong div span {
+  display: inline-block;
+  width: 0.9rem;
+  float: left;
+  height: auto;
+  font-size: 0.16rem;
+  color: #999999;
+  text-indent: 0.14rem;
+  border-left: 0.07rem solid #ffd600;
+}
+.sansong div b {
+  display: inline-block;
+  width: 0.92rem;
+  height: 0.35rem;
+  border-radius: 0.3rem;
+  border: 0.01rem solid #ff3800;
+  text-align: center;
+  line-height: 0.35rem;
+  float: right;
+  color: #e64f1a;
+  font-size: 0.16rem;
+}
+.sansong p {
+  width: 100%;
+  height: 0.28rem;
+  color: #999999;
+  font-size: 0.14rem;
+  line-height: 0.28rem;
+}
+.sj {
+  width: 100%;
+  height: 0.64rem;
+  padding: 0 0.2rem 0 0.2rem;
+  background: #fff;
+  border-bottom: 0.01rem solid #e0e0e0;
+}
+.sj div {
+  width: 100%;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  font-size: 0.17rem;
+}
+.sj div span {
+  float: left;
+  margin-right: 0.15rem;
+}
+.sj div b {
+  float: right;
+  display: inline-block;
+  width: 0.7rem;
+  background: url(imgs/y.jpg) no-repeat right center;
+  background-size: 0.075rem;
+}
+.sj div span:nth-child(2) {
+  color: #e64f1a;
+}
+.beizhu {
+  width: 100%;
+  height: 0.66rem;
+  background: #fff;
+  padding: 0 0.2rem 0 0.2rem;
+  border-bottom: 0.01rem solid #e0e0e0;
+}
+.beizhu div {
+  width: 100%;
+  height: 0.66rem;
+  line-height: 0.66rem;
+  font-size: 0.17rem;
+}
+.beizhu div span {
+  color: #333333;
+}
+.beizhu div input {
+  width: 75%;
+  height: 0.43rem;
+  margin-left: 0.2rem;
+  padding-left: 0.1rem;
+  font-size: 0.17rem;
+  color: #99999;
+  border: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.03rem;
+}
+.list {
+  width: 100%;
+  height: 1.02rem;
+  padding: 0 0.2rem 0 0.2rem;
+  background: #fff;
+  border-bottom: 0.01rem solid #e0e0e0;
+  position: relative;
+}
+.list .list_n {
+  width: 100%;
+  height: 1.02rem;
+  padding-top: 0.2rem;
+}
+.list .list_n span {
+  display: inline-block;
+  width: 0.22rem;
+  height: 0.22rem;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0.2rem 0.3rem 0 0;
+  border: 0.01rem solid #e0e0e0;
+  float: left;
+}
+.list .list_n b {
+  width: 0.64rem;
+  height: 0.64rem;
+  float: left;
+  display: inline-block;
+  background: url(http://img01.bqstatic.com/upload/goods/201/607/2217/20160722171730_421643.jpg@120w_120h_90Q) no-repeat center;
+  background-size: 0.8rem;
+}
+.list .list_n p {
+  width: 60%;
+  float: left;
+  margin: 0 0 0 0.2rem;
+}
+.list .list_n p strong {
+  display: inline-block;
+  width: 100%;
+  height: 0.31rem;
+  font-size: 0.16rem;
+  line-height: 0.31rem;
+  color: #333333;
+}
+.list .list_n p i {
+  display: inline-block;
+  font-style: normal;
+  font-size: 0.16rem;
+  font-weight: 400;
+  width: 100%;
+  height: 0.51rem;
+  line-height: 0.51rem;
+  color: #333333;
+}
+.list .list_n #div1 {
+  width: 1.28rem;
+  height: 0.64rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  line-height: 0.3rem;
+}
+.list .list_n #div1 em {
+  display: inline-block;
+  width: 0.35rem;
+  height: 0.35rem;
+  border-radius: 50%;
+  border: 0.01rem solid #ffc392;
+  background: url(imgs/j.jpg) no-repeat center;
+  background-size: 0.15rem;
+  float: left;
+  margin-top: 0.15rem;
+}
+.list .list_n #div1 #em_1 {
+  background: url(imgs/jian.jpg) no-repeat center;
+  background-size: 0.15rem;
+}
+.list .list_n #div1 #s {
+  width: 0;
+  height: 0;
+  background: none;
+  float: left;
+  border: none;
+  display: inline-block;
+  margin-left: 0.15rem;
+  font-size: 0.16rem;
+  color: #333333;
+}
+.xuan {
+  width: 100%;
+  height: 0.65rem;
+  padding-left: 0.2rem;
+  background: #fff;
+}
+.xuan div {
+  width: 100%;
+  height: 0.65rem;
+  line-height: 0.65rem;
+}
+.xuan div span {
+  display: inline-block;
+  width: 0.22rem;
+  height: 0.22rem;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0.2rem 0.1rem 0 0;
+  border: 0.01rem solid #e0e0e0;
+  float: left;
+}
+.xuan div b {
+  font-size: 0.17rem;
+  float: left;
+  margin-right: 0.2rem;
+}
+.xuan div p {
+  float: left;
+  font-size: 0.16rem;
+}
+.xuan div p i {
+  margin-left: 0.1rem;
+  font-style: normal;
+  color: #e64f1a;
+}
+.xuan div strong {
+  display: inline-block;
+  width: 31%;
+  float: right;
+  text-align: center;
+  background: #ffd600;
+  font-size: 0.17rem;
+  color: #333;
+}
+.kong2 {
+  width: 100%;
+  height: 0.7rem;
+}
+footer {
+  width: 100%;
+  height: 0.7rem;
+  background: rgba(247, 247, 247, 0.97);
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+footer figure {
+  margin: auto;
+  position: relative;
+}
+footer figure img {
+  margin-left: 0.03rem;
+}
+footer figure figcaption {
+  text-align: center;
+}
+footer figure figcaption a {
+  color: #777777;
+  font-size: 0.15rem;
+}
+footer figure span {
+  display: inline-block;
+  display: none;
+  width: 0.22rem;
+  height: 0.22rem;
+  background: #ff4400;
+  text-align: center;
+  line-height: 0.22rem;
+  border-radius: 50%;
+  color: #fff;
+  position: absolute;
+  top: -0.05rem;
+  left: 0.3rem;
+}
